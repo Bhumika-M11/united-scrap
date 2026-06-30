@@ -1,9 +1,9 @@
-const menuBtn = document.querySelector(".menu-toggle");
+const dropdown = document.querySelector(".dropdown");
 
-const navbar = document.querySelector(".navbar");
+dropdown.addEventListener("click", () => {
 
-menuBtn.addEventListener("click",()=>{
-
-    navbar.classList.toggle("active");
+    if(window.innerWidth <= 992){
+        dropdown.classList.toggle("open");
+    }
 
 });
